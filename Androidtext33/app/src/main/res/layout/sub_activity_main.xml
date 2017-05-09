@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a2cm.androidtext33.MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="算出结果"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="83dp"
+        app:layout_constraintTop_toBottomOf="@+id/btncheng" />
+
+    <Button
+        android:id="@+id/btnjia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btncheng"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnjian"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btncheng" />
+
+    <Button
+        android:id="@+id/btnjian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="减"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="94dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="94dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="94dp" />
+
+    <Button
+        android:id="@+id/btncheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="乘"
+        app:layout_constraintRight_toLeftOf="@+id/btnchu"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="56dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnjia" />
+
+    <Button
+        android:id="@+id/btnchu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="除"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btnjian"
+        android:layout_marginTop="46dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnjian"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnjian" />
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="52dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="71dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnjia"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="61dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnjian"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnjian"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
