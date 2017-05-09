@@ -1,0 +1,22 @@
+实验二  Android应用的调试与跟踪
+
+1、实验目的与任务： 
+借助教材所附源码熟悉Android应用程序开发环境,熟练掌握创建工程、编辑源码、编译运行、调试跟踪等实验步骤。
+掌握LOGCAT、DDMS等跟踪调试工具，通过实践操作理解Activity组件的状态变换机制。
+
+2、预习要求：
+通篇学习教材第四章的内容，下载本课程学习涉及到的案例源码。
+
+3、实验基本原理：
+按照Activity组件的生命周期与状态切换机制，利用LOGCAT、DDMS等调试工具跟踪Activity组件的状态变化。
+
+4、实验环境：
+JDK1.8、Android Studio、Android SDK、ADT
+
+5、实验内容：
+(1)在Eclipse中导入第四章所附案例工程ActivityLifeCycle，并为该工程创建模拟器，编译运行观察模拟器上的运行结果。
+(2)打开LOGCAT显示当前ANDROID模拟器的活动日志，观察信息显示格式。
+(3)为ActivityLifeCycle设置日志信息过滤器，筛选显示其活动日志信息以便于跟踪该应用的状态变换。
+(4)在模拟器中启动ActivityLifeCycle应用，再点击结束按钮，同时观察LOGCAT的日志信息。
+(5)在模拟器中启动ActivityLifeCycle应用，再点击模拟器的HOME按键，再从后台应用列表切回运行状态，同时观察LOGCAT的日志信息。
+(6)在模拟器中启动ActivityLifeCycle应用，在DDMS监控工具中通过Emulator Control服务对模拟器进行语音呼叫，同时观察LOGCAT的日志信息。
